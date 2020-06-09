@@ -12,3 +12,6 @@ server.use("/api/accounts", accountsRouter);
 
 module.exports = server;
 
+server.get('/', function(req, res){
+    res.send("Working Great!");
+})
